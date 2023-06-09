@@ -1,0 +1,430 @@
+@font-face {
+  font-family: Lexend-Light;
+  src: url(./assets/fonts/lexend/Light.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Lexend-SemiBold;
+  src: url(./assets/fonts/lexend/SemiBold.woff2);
+  font-weight: 600;
+}
+.container-xxl {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  z-index: 11111;
+}
+
+.listCheck {
+  list-style: none;
+}
+.listCheck li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #F6F9FC;
+}
+
+.theme-btn {
+  font-size: 0.8em;
+  text-decoration: none;
+  background-color: #E9A929;
+  font-weight: 700;
+  text-align: center;
+  color: #F6F9FC;
+  opacity: 1;
+  transition: opacity, color 350ms 150ms ease-in-out;
+  border-radius: 8px;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.theme-btn:hover {
+  opacity: 0.9;
+  color: #F6F9FC;
+}
+
+.whiteBg {
+  background-color: #F6F9FC;
+}
+
+.white-text {
+  color: #F6F9FC;
+}
+
+.blackBg {
+  background-color: #39393A;
+}
+
+.d-flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+.section-hero {
+  overflow: hidden;
+}
+.section-hero .main-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-image: url("./hero__img__mobile.jpg"); /* The image used */
+  height: 338px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.section-hero .hero-card {
+  padding: 40px 0;
+}
+.section-hero .hero-card h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+.section-hero .hero-card p {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 35px 0;
+}
+.section-hero .hero-card button {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.section-1 {
+  background-color: #289256;
+  padding: 40px 0;
+}
+.section-1 .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.section-1 .card-container .card-section {
+  background-color: #F6F9FC;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 49px;
+  gap: 15px;
+  width: 328px;
+  height: 293px;
+}
+.section-1 .card-container .card-section .card-section-content {
+  text-align: center;
+}
+.section-1 .card-container .card-section .card-section-content object {
+  margin-bottom: 31px;
+}
+.section-1 .card-container .card-section .card-section-content h3 {
+  font-family: Lexend-SemiBold;
+}
+.section-1 .card-container .card-section .card-section-content p {
+  font-family: Lexend-Light;
+}
+
+.section {
+  padding: 40px 0;
+}
+.section .section-el-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.8em;
+}
+.section .section-el-container .img-description h4 {
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 0.8em;
+}
+.section .section-el-container .img-description p {
+  margin-bottom: 0.8em;
+}
+.section .section-el-container .img-container {
+  overflow: hidden;
+  border-radius: 8px;
+  height: 293px;
+}
+.section .section-el-container .img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 25% 50%;
+     object-position: 25% 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .section-hero {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-hero .main-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    background-image: url("./hero__img__mobile.jpg"); /* The image used */
+    height: 820px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 8px;
+  }
+  .section-hero .hero-card {
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    padding: 40px;
+    transform: translateY(-50%);
+    background-color: #F6F9FC;
+  }
+  .section-hero .hero-card h1 {
+    text-align: left;
+  }
+  .section-hero .hero-card p {
+    text-align: left;
+  }
+  .section-hero .hero-card button {
+    width: auto;
+  }
+  .section-1 .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+  .section-1 .card-container .card-section {
+    padding: 25px 35px;
+    flex-direction: column;
+    width: 328px;
+    height: 293px;
+  }
+  .section-1 .card-container .card-section .card-section-content object {
+    margin-bottom: 31px;
+  }
+  .section {
+    padding: 100px 40px;
+  }
+  .section .section-el-container {
+    flex-direction: row;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+  .section .section-el-container .img-description h4 {
+    font-weight: 700;
+    font-size: 1.9em;
+    margin-bottom: 0.3em;
+  }
+  .section .section-el-container .img-description p {
+    margin-bottom: 0.3em;
+  }
+  .section .section-el-container .img-container {
+    height: 400px;
+  }
+  .section .section-el-container .img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 25% 50%;
+       object-position: 25% 50%;
+  }
+}
+@media (min-width: 992px) {
+  .section-hero {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-hero .main-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    background-image: url("./desktop-hero-img.jpg"); /* The image used */
+    height: 820px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 8px;
+  }
+  .section-hero .hero-card {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    height: 466px;
+    max-width: 754px;
+    padding: 40px;
+    transform: translateY(-50%);
+    background-color: #F6F9FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+  .section-hero .hero-card h1 {
+    text-align: left;
+  }
+  .section-hero .hero-card p {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+  }
+  .section-hero .hero-card button {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .section-1 .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+  }
+  .section-1 .card-container .card-section {
+    flex-direction: column;
+    width: 427px;
+    height: 293px;
+  }
+  .section-1 .card-container .card-section .card-section-content object {
+    margin-bottom: 31px;
+  }
+  .section {
+    padding: 100px 40px;
+  }
+  .section .section-el-container {
+    flex-direction: row;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+  .section .section-el-container .img-description {
+    max-width: 600px;
+  }
+  .section .section-el-container .img-description h4 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
+  .section .section-el-container .img-description p {
+    margin-bottom: 0.8em;
+  }
+  .section .section-el-container .img-container {
+    height: 600px;
+  }
+  .section .section-el-container .img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 25% 50%;
+       object-position: 25% 50%;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .section-hero {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-hero .main-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    background-image: url("./desktop-hero-img.jpg"); /* The image used */
+    height: 820px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 8px;
+  }
+  .section-hero .hero-card {
+    position: absolute;
+    top: 50%;
+    height: 466px;
+    max-width: 754px;
+    left: calc(50% - 233px - 427px);
+    padding: 40px;
+    transform: translateY(-50%);
+    background-color: #F6F9FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+  .section-hero .hero-card h1 {
+    text-align: left;
+  }
+  .section-hero .hero-card p {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+  }
+  .section-hero .hero-card button {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .section {
+    padding: 100px 40px;
+  }
+  .section .section-el-container {
+    flex-direction: row;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+  .section .section-el-container .img-description h4 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
+  .section .section-el-container .img-description p {
+    margin-bottom: 0.8em;
+  }
+  .section .section-el-container .img-container {
+    max-width: 620px;
+    height: 600px;
+  }
+  .section .section-el-container .img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 25% 50%;
+       object-position: 25% 50%;
+  }
+}
+@media (min-width: 1400px) {
+  .section {
+    padding: 100px 40px;
+  }
+  .section .section-el-container {
+    flex-direction: row;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .section .section-el-container .img-description h4 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
+  .section .section-el-container .img-description p {
+    margin-bottom: 0.8em;
+  }
+  .section .section-el-container .img-container {
+    max-width: 620px;
+    height: 600px;
+  }
+  .section .section-el-container .img-container img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 25% 50%;
+       object-position: 25% 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
