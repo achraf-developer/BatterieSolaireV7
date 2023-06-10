@@ -57,8 +57,52 @@
   background-color: #39393A;
 }
 
+.greeBg {
+  background-color: #289256;
+}
+
+.blueBg {
+  background-color: #3250A5;
+}
+
 .d-flex-row-reverse {
   flex-direction: row-reverse !important;
+}
+
+.swiper {
+  z-index: 100;
+  height: 330px;
+  width: 100%;
+  position: relative;
+}
+.swiper .swiper-slide {
+  background-color: #F6F9FC;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .contorls-nav {
+  position: absolute;
+  width: 130px;
+  bottom: 10px;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper .contorls-nav .swiper-btn {
+  z-index: 100;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-hero {
@@ -163,6 +207,10 @@
   border-radius: 8px;
 }
 
+.section-reverse {
+  flex-direction: column !important;
+}
+
 @media (min-width: 768px) {
   .section-hero {
     overflow: hidden;
@@ -219,6 +267,7 @@
   }
   .section .section-el-container {
     flex-direction: row;
+    justify-content: space-between;
     -moz-column-gap: 0px;
          column-gap: 0px;
   }
@@ -238,6 +287,9 @@
        object-fit: cover;
     -o-object-position: 25% 50%;
        object-position: 25% 50%;
+  }
+  .section-reverse {
+    flex-direction: row-reverse !important;
   }
 }
 @media (min-width: 992px) {
@@ -328,6 +380,9 @@
        object-position: 25% 50%;
     width: 100%;
   }
+  .section-reverse {
+    flex-direction: row-reverse !important;
+  }
 }
 @media (min-width: 1200px) {
   .section-hero {
@@ -399,6 +454,9 @@
     -o-object-position: 25% 50%;
        object-position: 25% 50%;
   }
+  .section-reverse {
+    flex-direction: row-reverse !important;
+  }
 }
 @media (min-width: 1400px) {
   .section {
@@ -426,5 +484,8 @@
        object-fit: cover;
     -o-object-position: 25% 50%;
        object-position: 25% 50%;
+  }
+  .section-reverse {
+    flex-direction: row-reverse !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -2,6 +2,7 @@ $theme-primary-color:#E9A929;
 $theme-green-color:#289256;
 $theme-bloack-color:#39393A;
 $whiteBg:#F6F9FC;
+$blueBg:#3250A5;
 
 @font-face {
     font-family: Lexend-Light;
@@ -18,6 +19,7 @@ $whiteBg:#F6F9FC;
     border-left: 1px solid black;
     border-right: 1px solid black;
     z-index: 11111;
+    // max-width: 1440px !important;
 }
 .listCheck{
     list-style: none;
@@ -59,9 +61,56 @@ $whiteBg:#F6F9FC;
     .blackBg{
         background-color:$theme-bloack-color;
     }
+    .greeBg{
+        background-color:$theme-green-color ;
+    }
+    .blueBg{
+        background-color:#3250A5;
+    }
     .d-flex-row-reverse{
         flex-direction: row-reverse !important;
     }
+    // mobile first for mobile 
+.swiper {
+    z-index: 100;
+    // width: 600px;
+    // height: 300px;
+    height: 330px;
+    width: 100%;
+    position: relative;
+    .swiper-slide{
+        background-color: $whiteBg;
+        border-radius: 8px;
+        // width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contorls-nav{
+        position: absolute;
+     
+        width: 130px;
+        bottom:10px ;
+        left: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .swiper-btn{
+            z-index: 100;
+            height: 36px;
+            width: 36px;
+            border-radius: 100%;
+            border: 1px solid white;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+  }
 .section-hero{
     overflow: hidden;
     .main-img{
@@ -165,6 +214,11 @@ $whiteBg:#F6F9FC;
        }
     }
 }
+    .section-reverse{
+            flex-direction: column !important;
+           }
+           
+      
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -236,6 +290,7 @@ $whiteBg:#F6F9FC;
         padding: 100px 40px;
         .section-el-container{
             flex-direction: row;
+             justify-content: space-between;
             column-gap:0px;
            .img-description{
             // padding-right: 0 0 0 40px;
@@ -260,6 +315,9 @@ $whiteBg:#F6F9FC;
            }
         }
     }
+    .section-reverse{
+        flex-direction: row-reverse !important;
+       }
   }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
@@ -360,6 +418,9 @@ $whiteBg:#F6F9FC;
            }
         }
     }
+    .section-reverse{
+        flex-direction: row-reverse !important;
+       }
  }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -442,6 +503,9 @@ $whiteBg:#F6F9FC;
            }
         }
     }
+    .section-reverse{
+        flex-direction: row-reverse !important;
+       }
  }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -476,4 +540,7 @@ $whiteBg:#F6F9FC;
            }
         }
     }
+    .section-reverse{
+        flex-direction: row-reverse !important;
+       }
   }
