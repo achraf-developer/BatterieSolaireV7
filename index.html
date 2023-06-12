@@ -86,23 +86,22 @@
       </div>
     </nav>
     <section class="section-hero">
-      <div class="main-img">
-        <div class="container container-xxl sect-py">
-          <div class="hero-card col col-md-6">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              placerat, lorem ut hendrerit tincidunt.
-            </p>
-            <button href="/" class="btn theme-btn btn-lg">
-              DEMANDEZ VOTRE DEVIS GRATUIT
-            </button>
-          </div>
+      <div class="main-img"></div>
+      <div class="container container-xxl sect-py">
+        <div class="hero-card col col-md-6">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            placerat, lorem ut hendrerit tincidunt.
+          </p>
+          <button href="/" class="btn theme-btn btn-lg">
+            DEMANDEZ VOTRE DEVIS GRATUIT
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="section-1">
+    <section class="section section-1">
       <div class="container-xxl">
         <div class="card-container">
           <div class="card-section">
@@ -286,6 +285,9 @@
     <section class="section section-partenaires blueBg">
       <div class="container-xxl">
         <!-- Slider main container -->
+        <h5>Nos partenaires</h5>
+      </div>
+      <div class="slider-container overflow-hidden container-xxl">
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -321,28 +323,261 @@
           </div>
           <div class="contorls-nav">
             <!-- If we need pagination -->
-            
+
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-left swiper-btn">
-              <object
-                    data="./assets/img/icon-arrow-left.svg"
-                    width="14"
-                    height="14"
-                  ></object>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-right swiper-btn">
-              <object
-              data="./assets/img/icon-arrow-right.svg "
-              width="14"
-              height="14"
-            ></object>
-            </div>
+            <button class="swiper-button-left swiper-btn">
+              <!-- &#8592; -->
+              <span>
+                <object
+                  id="arrow-left"
+                  data="./assets/img/icon-arrow-left.svg"
+                  width="14"
+                  height="14"
+                ></object>
+              </span>
+            </button>
+            <div class="swiper-pagination text-white fw-meduim"></div>
+            <button class="swiper-button-right swiper-btn">
+              <span>
+                <object
+                  id="arrow-right"
+                  data="./assets/img/icon-arrow-right.svg "
+                  width="14"
+                  height="14"
+                ></object>
+              </span>
+            </button>
           </div>
         </div>
       </div>
     </section>
+    <section class="section section-faqs blackBg">
+      <div class="container-xxl">
+        <div class="row-container justify-content-space-between">
+          <div class="col-6 ">
+            <div class="row-accordion">
+            <h5>Foire Aux Questions</h5>
+            <div class="accordion" id="accordion">
+              <div class="">
+                <h2 class="" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q1"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Quelle batterie pour panneau solaire ?
+                  </button>
+                </h2>
+                <div
+                  id="q1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    Il existe plusieurs types de batteries solaires, selon leur
+                    mode de fonctionnement et selon leurs caractéristiques. Il
+                    est donc primordial de sélectionner la batterie solaire qui
+                    correspond à vos besoins en termes de capacité de stockage,
+                    de rendement, d’entretien, de durée de vie et de résistance.
+                  </div>
+                </div>
+              </div>
 
+              <div class="">
+                <h2 class="" id="#q2">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q2"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Quel type de batterie pour panneau solaire ?
+                  </button>
+                </h2>
+                <div
+                  id="q2"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    Il existe différents types de batteries solaires avec une
+                    variété de caractéristiques. Permettant de faire le choix le
+                    plus adapté à votre usage et à votre installation
+                    photovoltaïque dans le but, de réaliser une autonomie
+                    énergétique et optimiser la consommation propre.
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <h2 class="" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q3"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Comment calculer l’autonomie d’une batterie solaire ?
+                  </button>
+                </h2>
+                <div
+                  id="q3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      L’autonomie d’une batterie solaire varie en fonction des
+                      marques et des modèles. Elle varie entre 1 et 2 jours
+                      selon la capacité utile de votre batterie solaire et le
+                      rendement de conversion. <br />
+                      Vous pouvez retrouver différentes unités de mesure :
+                    </p>
+                    <ul>
+                      <li>Les volts (V) : Correspondent à la tension.</li>
+                      <li>Les ampères (A) : Cela correspond à l’intensité.</li>
+                      <li>Les Watts (W) : Qui représente la puissance.</li>
+                      <li>
+                        Les Ampères heure : c’est l’unité de charge électrique
+                        multipliée par les ampèrespar heure.
+                      </li>
+                    </ul>
+                    <p>
+                      Pour calculer l’autonomie réelle, il suffit de multiplier
+                      la capacité utile par le rendement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <h2 class="" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q4"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Comment charger une batterie solaire ?
+                  </button>
+                </h2>
+                <div
+                  id="q4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    La batterie solaire fonctionne sous un rythme cyclique de
+                    charge et de décharge, gérée par un Energy Management System
+                    (EMS), permet d’analyser la quantité de courant produite par
+                    les panneaux solaires et l’état de charge de la batterie. Le
+                    Battery Management System (BMS) complète les fonctionnalités
+                    de l’ESM en préservant la durée de vie de la batterie et
+                    d’en optimiser la sécurité.
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <h2 class="" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q5"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Comment fonctionne une batterie solaire ?
+                  </button>
+                </h2>
+                <div
+                  id="q5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    Il faut savoir que l’électricité produite par les panneaux
+                    photovoltaïques est en courant continu. Alors que, les
+                    appareils électriques fonctionnent avec un courant
+                    alternatif. D’où, l’installation photovoltaïque doit être
+                    reliée à un onduleur via la batterie solaire, qui permet de
+                    transformer le courant continu en courant alternatif avant
+                    son utilisation.
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <h2 class="" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#q6"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Quelles sont les meilleures batteries pour panneaux solaires
+                    ?
+                  </button>
+                </h2>
+                <div
+                  id="q6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    Il faut savoir que l’électricité produite par les panneaux
+                    photovoltaïques est en courant continu. Alors que, les
+                    appareils électriques fonctionnent avec un courant
+                    alternatif. D’où, l’installation photovoltaïque doit être
+                    reliée à un onduleur via la batterie solaire, qui permet de
+                    transformer le courant continu en courant alternatif avant
+                    son utilisation.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-6">
+            <div class="row-img">
+              <img class="img-fluid" src="./assets/img/faqsImg.jpg" alt="fags section image" />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-contact section greeBg">
+      <div class="col-6 offset-3">
+        <h6>Lorem ipsum dolor sit amet</h6>
+<form action="">
+  <div class="form-group mb-3">
+    <label for="email">Email</label>
+  <input type="email" class="form-control form-control-lg" id="email" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+  <label for="nom">Nom & Prénom</label>
+  <input type="text" class="form-control form-control-lg" id="nom" placeholder="Nom complet">
+  
+</div>    
+   
+    </form>
+      </div>
+    </section>
+    <footer class="blueBg" style="padding:20px 0;">
+      <p class="text-center small m-0 text-white">© Tous droits réservé <a href="/" class="text-decoration-none">Batterie Solaire</a> 2023-2024 </p>
+</footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
