@@ -79,9 +79,9 @@
               <a class="nav-link" href="#">Section 4</a>
             </li>
           </ul>
-          <a href="#form-devis" class="btn btn-warning"
-            >Prenez un rendez-vous</a
-          >
+          <button href="/" class="btn theme-btn btn-lg">
+            Prenez un rendez-vous
+          </button>
         </div>
       </div>
     </nav>
@@ -149,7 +149,7 @@
     <section class="section whiteBg">
       <div class="container-xxl">
         <div class="row section-el-container">
-          <div class="col col-md-6 img-description">
+          <div class="col-12 col-lg-6 img-description">
             <h4>Batterie pour Panneau solaire</h4>
             <p>
               La batterie pour panneau solaire permet de réserver l’énergie
@@ -162,7 +162,7 @@
               consommation propre.
             </p>
           </div>
-          <div class="col col-md-6 img-container">
+          <div class="col-12 col-lg-6 img-container">
             <img src="./assets/img/testlaBatterie.jpg" alt="" />
           </div>
         </div>
@@ -171,7 +171,7 @@
     <section class="section blackBg">
       <div class="container-xxl">
         <div class="row section-el-container section-reverse">
-          <div class="col col-md-6 img-description">
+          <div class="col-12 col-lg-6 img-description">
             <h4 class="white-text">Pourquoi nettoyer vos panneaux solaires?</h4>
             <ul class="listCheck">
               <li>
@@ -207,8 +207,11 @@
                 Consectetur adipiscing elit.
               </li>
             </ul>
+            <button href="/" class="btn theme-btn">
+              Primary call to action
+            </button>
           </div>
-          <div class="col col-md-6 img-container">
+          <div class="col-12 col-lg-6 img-container">
             <img src="./assets/img/vartaBatterie.jpg" alt="" />
           </div>
         </div>
@@ -217,7 +220,7 @@
     <section class="section whiteBg">
       <div class="container-xxl">
         <div class="row section-el-container">
-          <div class="col col-md-6 img-description">
+          <div class="col-12 col-lg-6 img-description">
             <h4>Batterie pour Panneau solaire</h4>
             <p>
               La batterie pour panneau solaire permet de réserver l’énergie
@@ -230,7 +233,7 @@
               consommation propre.
             </p>
           </div>
-          <div class="col col-md-6 img-container">
+          <div class="col-12 col-lg-6 img-container">
             <img src="./assets/img/enphaseBatterie.jpg" alt="" />
           </div>
         </div>
@@ -239,7 +242,7 @@
     <section class="section greeBg">
       <div class="container-xxl">
         <div class="row section-el-container section-reverse">
-          <div class="col col-md-6 img-description">
+          <div class="col-12 col-lg-6 img-description">
             <h4 class="white-text">Pourquoi nettoyer vos panneaux solaires?</h4>
             <ul class="listCheck">
               <li>
@@ -276,21 +279,21 @@
               </li>
             </ul>
           </div>
-          <div class="col col-md-6 img-container">
+          <div class="col-12 col-lg-6 img-container">
             <img src="./assets/img/vartaBatterie2.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-partenaires blueBg">
+    <section class="section-partenaires blueBg">
       <div class="container-xxl">
         <!-- Slider main container -->
         <h5>Nos partenaires</h5>
       </div>
-      <div class="slider-container overflow-hidden container-xxl">
+      <div class="slider-container container-xxl overflow-hidden">
         <div class="swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper "   centered-slides="true">
             <!-- Slides -->
             <div class="swiper-slide">
               <object
@@ -353,9 +356,8 @@
     </section>
     <section class="section section-faqs blackBg">
       <div class="container-xxl">
-        <div class="row-container justify-content-space-between">
-          <div class=" col-12 col-md-6 ">
-            <div class="row-accordion">
+        <div class="row-container row">
+          <div class="col-12 col-lg-6">
             <h5>Foire Aux Questions</h5>
             <div class="accordion" id="accordion">
               <div class="">
@@ -548,36 +550,63 @@
                 </div>
               </div>
             </div>
+            <!-- <div class="row-accordion">
+          
+          </div> -->
           </div>
-        </div>
-          <div class=" col-12 col-md-6">
-            <div class="row-img">
-              <img class="img-fluid" src="./assets/img/faqsImg.jpg" alt="fags section image" />
-          </div>
+          <div class="col-12 col-lg-6 d-flex img-container">
+            <img
+             
+              src="./assets/img/faqsImg.jpg"
+              alt="fags section image"
+            />
+
+            <!-- <div class="row-img">
+          </div> -->
           </div>
         </div>
       </div>
     </section>
     <section class="section-contact section greeBg">
-      <div class="col-10 offset-1 col-md-6 offset-md-3">
-        <h6>Lorem ipsum dolor sit amet</h6>
-<form action="">
-  <div class="form-group mb-3">
-    <label for="email">Email</label>
-  <input type="email" class="form-control form-control-lg" id="email" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-  <label for="nom">Nom & Prénom</label>
-  <input type="text" class="form-control form-control-lg" id="nom" placeholder="Nom complet">
-  
-</div>    
-   
-    </form>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="">
+            <h6>Lorem ipsum dolor sit amet</h6>
+            <form action="">
+             
+              <div class="form-group">
+                <label for="nom">Nom & Prénom</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="nom"
+                  placeholder="Nom complet"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="email"
+                  placeholder="email@example.com"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="blueBg" style="padding:20px 0;">
-      <p class="text-center small m-0 text-white">© Tous droits réservé <a href="/" class="text-decoration-none">Batterie Solaire</a> 2023-2024 </p>
-</footer>
+    <footer class="blueBg" style="padding: 20px 0">
+      
+      <p class="text-center small m-0 text-white">
+        © Tous droits réservé
+        <a href="/" class="text-decoration-none text-warning"
+          >Batterie Solaire</a
+        >
+        2023-2024
+      </p>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
